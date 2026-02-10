@@ -82,3 +82,29 @@ Foreign key แบบ SET NULL - เมื่อ PK ถูกลบ FK จะเ
 Foreign key แบบ RESTRICT - PK จะไม่ถูกลบเมื่อมี FK ห้อยตามอยู่
 
 
+# SQL Sample Queries – Employee Management System
+
+This repository contains sample SQL queries demonstrating how to retrieve and analyze data from an Employee Management System database.
+
+The examples focus on:
+- Table relationships (JOIN)
+- Aggregation and grouping
+- Real-world employee and department use cases
+
+---
+
+## 🔹 Query 1: Employee & Department
+
+**โจทย์:**  
+แสดงข้อมูลพนักงาน (Employee) และแผนก (Department)
+
+```sql
+SELECT 
+    p.empusername,
+    d.depname,
+    d.dep_id
+FROM emp_profile p
+JOIN dep d
+    ON p.dep_id = d.id;
+
+![Query 1 Result](query1-employee-department.png)
