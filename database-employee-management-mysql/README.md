@@ -106,5 +106,6 @@ SELECT
 FROM emp_profile p
 JOIN dep d
     ON p.dep_id = d.id;
+```
+![Query 1 Result: Employee and Department Data](screenshots/query1-employee-department.png)
 
-![Query 1 Result](screenshots/query1-employee-department.png)
