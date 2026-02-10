@@ -106,4 +106,6 @@ Workflow นี้เหมาะสำหรับงาน **Automation, Data 
 
 ---
 
+![n8n-screenshot](screenshots/n8n-screenshot.png)
+
 ✨ **This project demonstrates how AI + Automation can significantly reduce manual data processing work.**
