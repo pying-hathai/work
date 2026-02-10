@@ -47,9 +47,7 @@ Each employee profile has exactly one contact record.
 
 ![One-to-One Relationship](screenshots/one-to-one-emp-profile-contact.png)
 
-This relationship uses a foreign key with ON DELETE CASCADE
-to ensure data consistency.
-
+T
 ---
 
 ### 🔹 One-to-Many: Department & Employee
@@ -69,6 +67,7 @@ Tables
 - emp_profile
 - emp_groupuser
 - profile_groupuser (junction table)
+สร้าง joint table มา 1 table เพื่อเชื่อมต่อ จะได้ one to many 2 ตาราง
 
 ![Many-to-Many Relationship](screenshots/many-to-many-employee-group.png)
 
