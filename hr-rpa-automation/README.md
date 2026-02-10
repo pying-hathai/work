@@ -1,9 +1,8 @@
 # HR RPA Automation Project (Python, SAP)
 
 ## Overview
-This project automates HR data processing into SAP using Python-based RPA.
-It replaces repetitive monthly manual configuration tasks with an automated workflow,
-improving efficiency and data accuracy.
+This project automates HR data configuration into SAP using Python RPA,
+reducing monthly manual workload.
 
 ## Business Problem
 HR functional teams manually processed employee data for:
@@ -15,7 +14,6 @@ This process caused:
 - High manual workload
 - Risk of human error
 - Delays in SAP configuration
-- Inconsistent data handling
 
 ## Objective
 - Reduce manual HR configuration work
@@ -41,11 +39,6 @@ A Python RPA solution was developed to:
 - Excel
 - Windows OS
 
-## Key Features
-- Batch processing for multiple HR records
-- Input validation to reduce errors
-- Logging and basic exception handling
-
 ## Result
 - Reduced monthly manual HR processing workload
 - Improved data accuracy
@@ -60,10 +53,9 @@ A Python RPA solution was developed to:
 ## How to Run (Optional)
 1. Install required Python libraries
 2. Prepare input Excel file
-3. Run the Python script
+3. Run the Python script by schedual task
 4. Review log files for results
 
 ## Future Improvement
-- Add email notification for job status
 - Enhance error handling and reporting
 - Extend automation to additional HR scenarios
