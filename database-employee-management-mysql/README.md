@@ -80,3 +80,5 @@ and each group can contain multiple employees.
 Foreign key แบบ SET NULL - เมื่อ PK ถูกลบ FK จะเป็น Null
 
 Foreign key แบบ RESTRICT - PK จะไม่ถูกลบเมื่อมี FK ห้อยตามอยู่
+
+
