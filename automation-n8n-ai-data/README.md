@@ -14,7 +14,7 @@ Manual data extraction and table creation were time-consuming and error-prone.
 - Generated structured tables with one-click execution
 
 ## Tools
-n8n, AI Prompt Engineering, Data Processing
+n8n, AI Prompt Engineering, Data Processing, Docker
 
 ## Result
 - Reduced manual data preparation
