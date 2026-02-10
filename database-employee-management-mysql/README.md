@@ -109,3 +109,47 @@ JOIN dep d
 ```
 ![Query 1 Result: Employee and Department Data](screenshots/query1-employee-department.png)
 
+
+## 🔹 Query 2: Department Summary & Employee Count
+
+**โจทย์:**  
+แสดงข้อมูลพนักงาน (Employee) และแผนก (Department) พร้อมนับจำนวนพนักงานในแต่ละแผนก
+
+**Objective:**  
+Display departments with employee count and employee list.
+
+```sql
+SELECT 
+    d.depname AS department_name,
+    d.dep_id AS department_id,
+    COUNT(p.empusername) AS employee_count,
+    GROUP_CONCAT(p.empusername) AS employee_usernames
+FROM dep d
+JOIN emp_profile p
+    ON d.id = p.dep_id
+GROUP BY d.depname;
+```
+![Query / Result: department-summary](screenshots/query2-department-summary.png)
+
+
+## 🔹 Query 3: Employee Contact Information
+
+**โจทย์:**  
+แสดงข้อมูลพนักงาน (Employee) และข้อมูลการติดต่อ
+
+**Objective:**  
+Display employee profile with contact details.
+
+```sql
+SELECT 
+    p.nametitle,
+    p.lastname,
+    p.empusername,
+    c.tel,
+    c.email
+FROM emp_profile p
+JOIN emp_contact c
+    ON p.id = c.emp_profile_id;
+
+```
+![Query / Result: employee-contact](screenshots/query3-employee-contact.png)
