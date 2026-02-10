@@ -1,7 +1,7 @@
 # Employee Database Management (MySQL)
 
 ## Overview
-Designed and implemented a MySQL database to manage employee information in a structured and centralized system.
+Designed and implemented a MySQL database to manage employee information.
 
 ## Problem
 Employee data was stored across multiple files and formats, making it difficult to manage, update, and ensure data consistency.
@@ -22,9 +22,6 @@ MySQL, SQL
 
 # Employee Database Management (MySQL)
 
-## Overview
-Relational database design for managing employee master data using MySQL.
-
 ## Database Design
 ![ER](screenshots/er-diagram.png)
 
@@ -37,18 +34,43 @@ Relational database design for managing employee master data using MySQL.
 - emp_groupuser
 - profile_groupuser
 
-## One-to-One: Employee Profile & Contact
+## 🔗 Database Relationships
+
+### 🔹 One-to-One: Employee Profile & Contact
+Employee Profile & Contact Information
+
+Tables
+- emp_profile – stores core employee information
+- emp_contact – stores employee contact details
+
+Each employee profile has exactly one contact record.
+
 ![One-to-One Relationship](screenshots/one-to-one-emp-profile-contact.png)
 
-*One employee profile is linked to one contact record using a foreign key with
-ON DELETE CASCADE.*
+This relationship uses a foreign key with ON DELETE CASCADE
+to ensure data consistency.
 
-## One-to-Many: Department & Employee
+---
+
+### 🔹 One-to-Many: Department & Employee
+Tables
+- dep – department information
+- emp_profile – employee profile
+
+One department can have multiple employees,
+but each employee belongs to only one department.
+
 ![One-to-Many Relationship](screenshots/one-to-many-department-employee.png)
 
-*One department can be associated with many employee profiles.*
+---
 
-## Many-to-Many: Employee & Group
+### 🔹 Many-to-Many: Employee & Group
+Tables
+- emp_profile
+- emp_groupuser
+- profile_groupuser (junction table)
+
 ![Many-to-Many Relationship](screenshots/many-to-many-employee-group.png)
 
-*Employees can belong to multiple groups, and each group can contain multiple employees.*
+Employees can belong to multiple groups,
+and each group can contain multiple employees.
