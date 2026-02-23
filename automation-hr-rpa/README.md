@@ -74,6 +74,11 @@ A Python RPA solution was developed to:
 - Developed Python RPA scripts
 - Coordinated with HR users for UAT testing
 
+- วิเคราะห์ความต้องการทางธุรกิจของ HR
+- ออกแบบ workflow ระบบอัตโนมัติ
+- พัฒนา Python RPA script
+- ประสานงานกับผู้ใช้ HR สำหรับ UAT Testing
+
 ## How to Run (Optional)
 1. Install required Python libraries
 2. Prepare input Excel file
