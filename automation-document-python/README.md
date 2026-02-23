@@ -18,3 +18,5 @@ Python, Excel, Microsoft Word, Email (SMTP)
 - Reduced repetitive manual document work
 - Faster document processing
 - Improved accuracy and consistency
+
+![pic1](screenshots/pic1.png)
