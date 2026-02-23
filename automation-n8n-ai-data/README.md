@@ -3,7 +3,7 @@
 ## Overview
 Automated workflow using n8n and AI to convert unstructured text into structured data tables, reducing manual data preparation.
 
-โปรเจกต์นี้เป็นตัวอย่าง Workflow อัตโนมัติที่สร้างด้วย **n8n** และ **AI** สำหรับแปลงข้อมูลข้อความแบบไม่มีโครงสร้าง (Unstructured Text) ให้กลายเป็นตารางข้อมูลแบบมีโครงสร้าง (Structured Data) เพื่อลดเวลาการเตรียมข้อมูลแบบ Manual
+โปรเจกต์นี้เป็นตัวอย่าง Workflow อัตโนมัติที่สร้างด้วย **n8n** และ **AI** สำหรับแปลงข้อมูลข้อความแบบไม่มีโครงสร้าง ข้อความบรรยายยาวๆ (Unstructured Text) ให้กลายเป็นตารางข้อมูลแบบมีโครงสร้าง (Structured Data) เพื่อลดเวลาการเตรียมข้อมูลแบบ Manual
 
 
 ## Problem
