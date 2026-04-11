@@ -1,0 +1,21 @@
+﻿time,level,context,message
+2026-03-24 11:34:13,ERROR,CU S4D,"
+[ERROR]
+System: CU S4D
+Time: 2026-03-24 11:34:13
+
+Message:
+(-2147352567, 'Exception occurred.', (619, 'SAP Frontend Server', 'The control could not be found by id.', 'C:\\Program Files (x86)\\SAP\\FrontEnd\\SAPgui\\sapfront.HLP', 393215, 0), None)
+
+Traceback:
+Traceback (most recent call last):
+  File ""C:\RPA-HR-Script\RPA Create_v4\hr_create4.py"", line 207, in <module>
+    session.findById(""wnd[0]/usr/tabsTABSTRIP1/tabpADDR"").select()
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""<COMObject <unknown>>"", line 2, in findById
+pywintypes.com_error: (-2147352567, 'Exception occurred.', (619, 'SAP Frontend Server', 'The control could not be found by id.', 'C:\\Program Files (x86)\\SAP\\FrontEnd\\SAPgui\\sapfront.HLP', 393215, 0), None)
+
+
+Screenshot:
+C:\RPA-HR-Script\RPA Create_v4\data\data_24032026_113349\logs\log_error\error.png
+"

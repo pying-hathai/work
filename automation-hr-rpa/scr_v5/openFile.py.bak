@@ -1,0 +1,19 @@
+import pandas as pd
+
+#reap input from excel
+filename = "Create_User_test_create.xlsx"
+excel_path = "C:\\Users\\hatha\\OneDrive - Chulalongkorn University\\Documents\\work\\pyrpa\\template\\Format_pythonRpa_create\\"
+input_file = excel_path + filename  # ตั้งชื่อให้ตรงกับไฟล์ที่คุณมี
+# โหลดไฟล์ Excel
+xls = pd.ExcelFile(input_file)
+# อ่านชีทสร้าง
+df_create = pd.read_excel(xls, sheet_name="สร้าง")
+#print(df_create.columns)
+
+for index, row in df_create.iterrows():
+    input_UserID = row['UserID']
+    input_FirstName = row['Firstname']
+    input_LastName = row['Lastname']
+    input_Department = row['Department']
+    input_Email = row['Email']
+    input_StartDate = row['วันที่เริ่ม']

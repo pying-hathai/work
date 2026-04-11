@@ -1,0 +1,31 @@
+import pandas as pd
+
+filename = "Create_User_test_create.xlsx"
+excel_path = "C:\\Users\\hatha\\OneDrive - Chulalongkorn University\\Documents\\work\\pyrpa\\template\\Format_pythonRpa_create\\"
+input_file = excel_path + filename  # ตั้งชื่อให้ตรงกับไฟล์ที่คุณมี
+reformat_file = excel_path + "S4P_CreateUsers_Reformat.xlsx"
+
+# โหลดไฟล์ Excel
+xls = pd.ExcelFile(input_file)
+# อ่านแต่ละสร้าง
+df_create = pd.read_excel(xls, sheet_name="สร้าง")
+#print(df_create.columns)
+# 1. แปลงข้อมูล "สร้าง"
+df_create_output = pd.DataFrame({
+    "system": ["S4P"] * len(df_create),
+    "action": ["create"] * len(df_create),
+    "userID": df_create["UserID"],
+    "firstname": df_create["Firstname"],
+    "lastname": df_create["Lastname"],
+    "department": df_create["Department"],
+    "email": df_create["Email"],
+    "startdate": df_create["วันที่เริ่ม"],
+    "enddate": ["31.12.9999"] * len(df_create),
+    "role1": ["ZBC_ENDUSER"] * len(df_create),
+    "role2": ["Z:BC_GENERAL"] * len(df_create),
+    "role3": ["ZCHRSS_ESS_BE01"] * len(df_create),
+    "role4": ["ZCHRSS_MSS_BE01"] * len(df_create)
+})
+
+# บันทึกไฟล์ออกมาแยกตามกรณี
+df_create_output.to_excel(reformat_file, index=False)
